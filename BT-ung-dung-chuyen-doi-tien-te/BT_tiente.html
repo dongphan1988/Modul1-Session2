@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Amount</h1>
+<input type="text" id="number1">
+from  currency
+<select id="number2">
+    <option>USD</option>
+    <option>VND</option>
+</select>
+to currency
+<select id="number3">
+    <option>USD</option>
+    <option>VND</option>
+</select>
+<button type="button" onclick="arena()">CLICK ME</button>
+<script>
+    function arena() {
+        let a = parseFloat(document.getElementById('number1').value);
+        let b = document.getElementById('number2').value;
+        let c = document.getElementById('number3').value;
+        let kq ;
+        if (b === 'USD' && c === 'VND'){
+            kq = a*23000 ;
+            alert(kq);
+        }else if(b === 'VND' && c === 'USD'){
+            kq = a/23000 ;
+            alert(kq) ;
+        }else{
+            kq = a ;
+            alert(kq);
+        }
+
+    }
+</script>
+</body>
+</html>

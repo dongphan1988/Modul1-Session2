@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="o1">
+<input type="text" id="o2"> <br>
+<button type="button" onclick="addition()">Addition(+)</button>
+<button type="button" onclick="subtraction()">Subtration(-)</button>
+<button type="button" onclick="multiplication()">Multiplication(x)</button>
+<button type="button" onclick="division()">Division(/)</button>
+<script>
+    function addition() {
+        let number1 = parseFloat(document.getElementById("o1").value) ;
+        let number2 = parseFloat(document.getElementById("o2").value) ;
+        let add = number1 + number2 ;
+
+        document.write("result addition = " + add);
+    }
+    function subtraction() {
+        let number1 = parseFloat(document.getElementById("o1").value) ;
+        let number2 = parseFloat(document.getElementById("o2").value) ;
+        let sub = number1 - number2 ;
+
+        document.write("result addition = " + mul);
+    }
+    function multiplication() {
+        let number1 = parseFloat(document.getElementById("o1").value) ;
+        let number2 = parseFloat(document.getElementById("o2").value) ;
+        let mul = number1 * number2 ;
+
+        document.write("result addition = " + mul);
+    }
+
+    function division() {
+        let number1 = parseFloat(document.getElementById("o1").value) ;
+        let number2 = parseFloat(document.getElementById("o2").value) ;
+        let div = number1 / number2 ;
+
+        document.write("result addition = " + div);
+    }
+
+
+</script>
+</body>
+</html>
